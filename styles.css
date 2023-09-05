@@ -189,8 +189,19 @@ a{
     display: flex;
     justify-content: space-evenly;
 } 
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    column-gap: 9px;
+    font-weight: 600;
+}
+.logo-container img{
+    width: 1.5rem;
+}
 .logo-footer{
-    align-self: center;
+    color: white;
 }
 footer p{
     font-size: 12.5px;
@@ -235,13 +246,11 @@ footer p{
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .a-difference{
         align-self: center;
         width: 541.5px;
         justify-items: center;
     }
-    
     .difference-tittle{
         background-color:transparent;
         column-gap: 16px;
@@ -269,16 +278,16 @@ footer p{
     .fifth{
         justify-content: space-around;
     }
-    
     .button-fifth{
         background-color: white;
         color: rgba(139, 72, 191, 1);
     }
     /* footer*/
     footer{
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        padding: 54px 165px;
+        padding: 54px 165px 43px;
+        row-gap: 4px;
     }
     .content-footer{
         align-self: normal;
@@ -286,17 +295,24 @@ footer p{
         flex-direction: row-reverse;
         justify-content: space-between;
     }
+    .navigation-footer{
+        padding: 0px;
+    }
     .media-logo-footer{
         align-self: normal;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items:flex-start;
     }
-    .logo-footer{
+    .logo{
         align-self:flex-start;
     }
     .navigation-media{
         column-gap: 13px;
+    }
+    .form-footer{
+        display: flex;
+        align-self: flex-start;
     }
     .rigths{
         align-self: flex-end;
