@@ -21,12 +21,18 @@ header{
 }
 .navigation a{
     color: black;
+     /* animaciones*/
+    transition-duration: 250ms;
+    transition-timing-function: ease;
 } 
+.navigation a:hover{
+    transform: scale(1.2);
+}
 .navigation, .navigation-button{
     display: none;
 }
 /* generals */
-.section{
+section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,14 +42,24 @@ button, input{
     border-radius: 50px;
     border: none;
 }
+input{
+    outline-color: #8B48BF;
+}
 button{
     background-color: #8B48BF;
     padding: 10px 20px;
     color: white;
     cursor: pointer;
+    /* animaciones*/
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+button:hover{
+    transform: scale(1.2);
 }
 input{
     padding: 10px 10px;
+    margin: 2px;
 }
 
 .button-type-1{
@@ -214,7 +230,7 @@ footer p{
 }
 
 @media(min-width: 1440px){
-    .section{
+    section{
         flex-direction: row;
     }   
     .navigation-button{
