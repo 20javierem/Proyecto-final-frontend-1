@@ -41,8 +41,6 @@ section{
 button, input{
     border-radius: 50px;
     border: none;
-}
-input{
     outline-color: #8B48BF;
 }
 button{
@@ -250,8 +248,7 @@ footer p{
         justify-content: center;
     }
     .first img, .content{
-        min-width: calc((100vw - 340px)/2);
-        max-width: calc((100vw - 340px)/2);
+        width: calc((100vw - 340px)/2);
     }
     /* segunda sección*/
     .second, .fifth{    
