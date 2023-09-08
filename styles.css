@@ -11,26 +11,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-/* header */
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 74.5px;
-    padding-bottom: 74.5px;
-}
-.navigation a{
-    color: black;
-     /* animaciones*/
-    transition-duration: 250ms;
-    transition-timing-function: ease;
-} 
-.navigation a:hover{
-    transform: scale(1.2);
-}
-.navigation, .navigation-button{
-    display: none;
-}
 /* generals */
 section{
     display: flex;
@@ -52,16 +32,52 @@ button{
     transition-duration: 250ms;
     transition-timing-function: ease;
 }
-button:hover{
+button:hover, .logo-container:hover{
     transform: scale(1.2);
+}
+button:active{
+    transform: scale(1);
 }
 input{
     padding: 10px 10px;
     margin: 2px;
 }
-
 .button-type-1{
     width: 134px;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 74.5px;
+    padding-bottom: 74.5px;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    column-gap: 9px;
+    font-weight: 600;
+     /* animaciones*/
+     transition-duration: 250ms;
+     transition-timing-function: ease;
+}
+.logo-container img{
+    width: 1.5rem;
+}
+.navigation a{
+    color: black;
+     /* animaciones*/
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+} 
+.navigation a:hover{
+    transform: scale(1.2);
+}
+.navigation, .navigation-button{
+    display: none;
 }
 /* primera sección */
 .first{
@@ -205,17 +221,6 @@ a{
     display: flex;
     justify-content: space-evenly;
 } 
-.logo-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    column-gap: 9px;
-    font-weight: 600;
-}
-.logo-container img{
-    width: 1.5rem;
-}
 .logo-footer{
     color: white;
 }
