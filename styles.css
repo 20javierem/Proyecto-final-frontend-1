@@ -45,6 +45,15 @@ input{
 .button-type-1{
     width: 134px;
 }
+li{
+    list-style: none;
+    margin: 12px 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
 /* header */
 header{
     display: flex;
@@ -67,14 +76,15 @@ header{
 .logo-container img{
     width: 1.5rem;
 }
+.navigation ul li{
+ /* animaciones*/
+ transition-duration: 250ms;
+ transition-timing-function: ease;
+}
 .navigation ul li a{
     color: black;
-     /* animaciones*/
-    transition-duration: 250ms;
-    transition-timing-function: ease;
 } 
-.navigation ul li a:hover{
-    color: #3CDDF3;
+.navigation ul li:hover{
     transform: scale(1.2);
 }
 .navigation ul, .navigation-button{
@@ -206,15 +216,6 @@ footer{
     column-gap: 150px;
     flex-direction: row;
     align-items: flex-start;
-}
-li{
-    list-style: none;
-    margin: 12px 0px;
-}
-a{
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
 }
 .media-logo-footer{
     margin-top: 0px;
